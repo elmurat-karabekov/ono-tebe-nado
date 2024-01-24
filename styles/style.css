@@ -1,1 +1,101 @@
-/* место для вашего кода */
+.content-section {
+  padding-inline: 24px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: circle;
+}
+
+.menu-item {
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+}
+
+.menu-item_active {
+  border-bottom: none;
+  list-style: none;
+}
+
+.contacts {
+  min-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+}
+
+.contacts-link {
+  display: block;
+  width: max-content;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+.overlay {
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  padding-block: 92px 96px;
+}
+
+.header .menu {
+  margin-left: 26.5px;
+}
+
+.header .menu-list {
+  gap: 32px;
+}
+
+.header .menu-item {
+  line-height: 21px;
+  letter-spacing: 0.18px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.header .contacts {
+  justify-self: end;
+  margin-right: 25.5px;
+}
+
+.cover {
+}
+
+.lots {
+}
+
+.about {
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 88px;
+}
+
+.footer .menu-list {
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer .menu-item {
+  width: max-content;
+}
+
+.socials-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.socials-item {
+  width: 48px;
+}
