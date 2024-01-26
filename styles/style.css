@@ -152,6 +152,10 @@
   text-transform: uppercase;
 }
 
+.bet-button:hover {
+  cursor: pointer;
+}
+
 .lots {
   padding-top: 179px;
   padding-bottom: 146px;
