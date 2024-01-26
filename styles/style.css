@@ -8,13 +8,20 @@
 }
 
 .menu-item {
-  border-bottom: 1px solid #000;
   font-size: 18px;
 }
 
 .menu-item_active {
-  border-bottom: none;
   list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.menu__link__active {
+  border-bottom: none;
 }
 
 .contacts {
@@ -35,7 +42,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -76,7 +83,6 @@
 
 .cover {
   position: relative;
-  z-index: -2;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -84,7 +90,9 @@
 }
 
 .cover__title {
+  position: relative;
   padding: 145px 50px 0;
+  z-index: 2;
 }
 
 .accent-span {
@@ -117,6 +125,8 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -134,11 +144,11 @@
 
 .bet-button {
   border: 1px solid #fff;
+  background-color: transparent;
   padding: 12px 32px 11px 31px;
   color: #fff;
   font-size: 22px;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -165,7 +175,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   flex-basis: 334px;
-  height: 563px;
+  min-height: 563px;
 }
 
 .card-link {
@@ -182,30 +192,25 @@
   height: 100%;
   padding: 51px 40px 48px;
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_type_film {
-  z-index: -1;
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card_type_book {
-  z-index: -1;
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card_type_picture {
-  z-index: -1;
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card__title {
+  position: relative;
+  z-index: 2;
   color: #fff;
   font-weight: bold;
   font-size: 22px;
@@ -215,6 +220,8 @@
 }
 
 .card__text {
+  position: relative;
+  z-index: 2;
   color: #fff;
   font-size: 20px;
   line-height: 120%;
@@ -274,10 +281,6 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.2px;
-}
-
-.about__text-second-paragraph {
-  letter-spacing: 0;
 }
 
 .footer {
