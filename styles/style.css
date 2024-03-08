@@ -48,7 +48,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 148px 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding-block: 92px 96px;
 }
