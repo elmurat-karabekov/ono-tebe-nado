@@ -1,14 +1,15 @@
 # [Ono tebe nado](https://ono-tebe-nadoo.netlify.app/)
 
-A HTML, CSS and Vanilla JavaScript project from Yandex.Practicum «Frontend Developer» course.
+A HTML, CSS project from Yandex.Practicum «Frontend Developer» course.
 
-This project was created to focus on creating responsive websites, that would look great on various devices and browsers. The website can be toggled between Dark and Light themes.
+This project was created to focus using semantic HTML tags for better SEO and page navigation (accessibility). Flexbox and grid layout were used to create adaptive design
 
 ### Project Checklist
 
 - adaptive page layout using **flexbox** and **grids**
-- using semantic html tags (article, ul, li, address,...)
-- element positioning (absolute, relative, z-index)
+- using **semantic** html tags (article, ul, li, address,...)
+- element **positioning** (absolute, relative, z-index)
+- applying web fonts using **@font-face** CSS at-rule
 - <details>
     <summary><b>PixelPerfect</b> layout</summary>
     <img src="./images/demo2.gif">
